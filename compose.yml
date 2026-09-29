@@ -1,0 +1,23 @@
+---
+services:
+  bank:
+    container_name: Bank-cont
+    build: ./bank
+    ports:
+      - "1111:80"
+
+  bus:
+    container_name: Bus-cont
+    build: ./bus
+    ports:
+      - "1112:80"
+
+
+  flight:
+    container_name: Flight-cont
+    build: ./flight
+    ports:
+      - "1113:80"
+
+
+...
